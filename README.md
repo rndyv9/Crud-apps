@@ -18,8 +18,8 @@ Features
 Tech Stack
 
 - FastAPI
-- SQLite
-- SQLAlchemy
+- Uvicorn
+- SQLAlchemy + SQLite
 - pytest
 - HTML + JavaScript
 
