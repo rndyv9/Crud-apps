@@ -2,8 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 
-export DATABASE_URL=postgresql://postgres:NrOLNHfnetSjnzsERltXlqzKDwCzTnCn@postgres.railway.internal:5432/railway
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = "postgresql://postgres:NrOLNHfnetSjnzsERltXlqzKDwCzTnCn@postgres.railway.internal:5432/railway"
 
 # Fix for Railway (if it gives postgres://)
 if DATABASE_URL.startswith("postgres://"):
